@@ -1,0 +1,161 @@
+* {
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=spartan:wght@300;400;500&display=swap");
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+
+    // font-family: 'Ultra', serif;
+    // src: url(../public/Ultra-Regular.ttf);
+
+}
+
+:root {
+    --primaryColor: hsl(225, 50%, 48%);
+    --secondaryColor: hsl(180, 17%, 95%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28, 100%, 82%);
+    --HoverColor: hsl(225, 56%, 59%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 12%);
+    --textColor: hsl(240, 1%, 48%);
+    --bodrderColor: hsl(0, 0%, 83%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%);
+    --greyText: rgb(145, 145, 145);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --transition: .4s ease-in-out;
+}
+
+/* /// Default Styling =====> */
+body {
+    background: var(--whiteColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.btn {
+    padding: .7rem 1.5rem;
+    background: var(--primaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--whiteColor);
+
+    a {
+        color: var(--whiteColor);
+        font-weight: 500;
+    }
+
+    &:hover {
+        background: va(--HoverColor)
+    }
+
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 13px;
+    color: var(--greyText);
+    line-height: 22px;
+
+}
+
+h4 {
+    padding: 1rem 0;
+    font-weight: 700;
+    color: var(--blackColor);
+}
+
+h2 {
+    font-size: 25px;
+    padding: 1rem 0;
+    color: var(--blackColor);
+}
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+
+
+    .mainText {
+        color: var(--blackColor);
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 2.5rem;
+
+    }
+
+    .homeImages {
+        width: 100%;
+        margin: 1rem auto 0; //this will change on the wider screans.
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 5rem;
+
+        .videoDiv {
+            width: 100%;
+
+            .video {
+                border-radius: 10rem;
+            }
+        }
+
+        .plane {
+            position: absolute;
+            width: 150%;
+            top: -50%;
+            right: -15%;
+
+
+
+        }
+
+    }
+}
